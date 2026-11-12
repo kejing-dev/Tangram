@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kejing.tangramwood"
+    namespace = "io.embodit.tangramwood"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.kejing.tangramwood"
+        applicationId = "io.embodit.tangramwood"
         minSdk = 35
         targetSdk = 35
         versionCode = 3

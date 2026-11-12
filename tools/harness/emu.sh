@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Test harness for the PICO emulator, pinned to ONE device/AVD. Callable from Git Bash.
-#   DEV (default emulator-5564), AVD (default PICO_6_1_Factory3), PKG (default com.kejing.tangramwood), TAG (default Tangram)
+#   DEV (default emulator-5564), AVD (default PICO_6_1_Factory3), PKG (default io.embodit.tangramwood), TAG (default Tangram)
 #
 # Host input goes through emu.ps1 (PostMessage to the qemu PID of $AVD only; real cursor/focus untouched).
 #
@@ -25,7 +25,7 @@
 set -u
 DEV="${DEV:-emulator-5560}"
 AVD="${AVD:-Pico_Emulator_6_1_fresh}"
-PKG="${PKG:-com.kejing.tangramwood}"
+PKG="${PKG:-io.embodit.tangramwood}"
 TAG="${TAG:-Tangram}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(cd "$HERE/../.." && pwd)"

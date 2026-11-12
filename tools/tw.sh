@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Tangram dev harness (Windows Git Bash). Pinned to one emulator: DEV (borrowed with the factory's emu_borrow.py).
-#   tools/tw.sh cmd NAME [ARG]     debug broadcast:  am broadcast -a com.kejing.tangramwood.DEBUG --es cmd NAME --es a ARG
+#   tools/tw.sh cmd NAME [ARG]     debug broadcast:  am broadcast -a io.embodit.tangramwood.DEBUG --es cmd NAME --es a ARG
 #   tools/tw.sh shot OUT.png       still capture of the device (adb exec-out screencap)
 #   tools/tw.sh log [REGEX]        logcat lines of tag Tangram (optionally filtered)
 #   tools/tw.sh install            install the debug APK and start the app
 set -u
 DEV="${DEV:?set DEV=emulator-55xx}"
-PKG=com.kejing.tangramwood
+PKG=io.embodit.tangramwood
 ADB="${ADB:-$LOCALAPPDATA/Android/Sdk/platform-tools/adb.exe}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 case "${1:-}" in

@@ -5,7 +5,7 @@
             android:name=".platform.DebugCommandReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.kejing.tangramwood.DEBUG" />
+                <action android:name="io.embodit.tangramwood.DEBUG" />
             </intent-filter>
         </receiver>
     </application>
