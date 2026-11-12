@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copy from the design package content.* (D28); lines marked "added" are not in the design and are listed in ui-audit.md. -->
+<resources>
+    <string name="app_name">Tangram</string>
+    <string name="lang_code">en</string>
+
+    <!-- tabs -->
+    <string name="tab_play">Play</string>
+    <string name="tab_library">Puzzles</string>
+    <string name="tab_rules">How to</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- status lines (content.lines) -->
+    <string name="s00">Setting out the pieces…</string>
+    <string name="s02">Tap a piece, then tap a spot in the shadow.</string>
+    <string name="s02_empty">Tap a piece first.</string>
+    <string name="s03">Tap the shadow to drop it. Use the tabs to turn it.</string>
+    <string name="s06">Something\'s there. Dropped it right next to it.</string>
+    <string name="s07">In!</string>
+    <string name="t6">Right spot. Give it a turn.</string>
+    <string name="locked">That one\'s in. Use undo to take it out.</string>
+    <string name="help_line">Placed a %1$s for you. %2$s</string>
+    <string name="s13">Make anything you like. See what it looks like.</string>
+    <string name="s17">Tap a piece to bring the panel back.</string>
+    <string name="disabled">All done. Undo, hint and help are resting.</string>
+    <string name="s01_coach">Tap this big triangle first.</string>
+    <string name="s01_start">Let\'s go</string>
+    <string name="s10_line">Done! %1$s, %2$d moves. Next up: %3$s.</string>
+    <string name="s10_hint">Used a hint, so this one won\'t count as a best.</string>
+    <string name="s10_helped">Got %1$d helps, so this one won\'t count as a best.</string> <!-- added -->
+    <string name="s10_best">New best!</string>
+    <string name="s13_no_hint">No hints in free play.</string>
+    <string name="s16_reset">Put all the pieces back?</string>
+    <string name="s16_exit">Done for now?</string>
+    <string name="s16_clear">Clear all your records?</string>
+    <string name="s16_switch">Switch to %1$s? This one starts over.</string> <!-- added (D44: entries that lose progress ask first) -->
+    <string name="s18">Keep going? Last time: %1$d pieces of %2$s in %3$s.</string>
+    <string name="undid">Took that back.</string> <!-- added -->
+    <string name="replay_title">Watching it slowly · %1$d / 7</string> <!-- added -->
+    <string name="plate">%1$s · %2$d / 7 · %3$s</string>
+    <string name="plate_solved">%1$s · Done!</string>
+    <string name="plate_free">Free play · %1$d moves</string>
+    <string name="readout">Placed %1$d/7 · %2$s · %3$d moves · Best %4$s</string>
+    <string name="readout_free">%1$d moves</string> <!-- added -->
+    <string name="best_none">—</string>
+    <string name="reopen_note">The panel reopens next to the tangram. Drag the handle under it to move it.</string>
+
+    <!-- buttons (content.buttons) -->
+    <string name="btn_undo">Undo</string>
+    <string name="btn_hint_on">Hint on</string>
+    <string name="btn_hint_off">Hint off</string>
+    <string name="btn_help">Place one for me</string>
+    <string name="btn_mute">Mute</string>
+    <string name="btn_sound">Sound</string>
+    <string name="btn_reset">Start over</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_replay">Watch it slowly</string>
+    <string name="btn_again">Again</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_resume">Keep going</string>
+    <string name="btn_pick_other">Pick another</string>
+    <string name="btn_free">Free play</string>
+    <string name="btn_reopen">Reopen panel</string>
+    <string name="btn_clear">Clear records</string>
+    <string name="btn_quit">Quit app</string>
+    <string name="btn_cancel">Never mind</string>
+    <string name="btn_confirm_reset">Start over</string>
+    <string name="btn_confirm_quit">Quit</string>
+    <string name="btn_confirm_clear">Clear</string>
+    <string name="btn_confirm_switch">Switch</string> <!-- added -->
+    <string name="tab_left">Left</string>
+    <string name="tab_right">Right</string>
+    <string name="tab_flip">Flip</string>
+
+    <!-- settings (content.settingsLabels) -->
+    <string name="settings_language">Language</string>
+    <string name="lang_system">System</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_en">English</string>
+    <string name="settings_sound">Sound</string>
+    <string name="settings_volume">Volume</string>
+    <string name="vol_low">Low</string>
+    <string name="vol_mid">Mid</string>
+    <string name="vol_high">High</string>
+    <string name="settings_reduced">Reduce motion</string>
+    <string name="opt_on">On</string>
+    <string name="opt_off">Off</string>
+    <string name="settings_about">About</string>
+    <string name="about_text">Version %1$s · Icons: Material Symbols (Apache-2.0) · Font: Noto Sans (OFL)</string>
+
+    <!-- pieces / rules (content.rulesPage) -->
+    <string name="name_l">big triangle</string>
+    <string name="name_m">middle triangle</string>
+    <string name="name_s">small triangle</string>
+    <string name="name_sq">square</string>
+    <string name="name_p">parallelogram</string>
+    <string name="names_line">Big triangle ×2 · Middle triangle · Small triangle ×2 · Square · Parallelogram</string>
+    <string name="rules_1">Use all seven pieces. No stacking.</string>
+    <string name="rules_2">Drop one in the shadow. If it fits, it clicks down.</string>
+    <string name="rules_3">The parallelogram is the only one you flip. Won\'t fit? Flip it.</string>
+    <string name="mistake_1">The two big triangles are twins. Either one works.</string>
+    <string name="mistake_2">Flipping a triangle or the square does nothing. Just turn it.</string>
+    <string name="mistake_3">Stuck? Turn on the hint. The seams show up in the shadow.</string>
+    <string name="rules_source">Tangram comes from Qing-dynasty China. It was a craze in Europe and America in the 1800s, and over 6,500 puzzles have been published.</string>
+    <string name="rules_mistakes">Common slips</string> <!-- added -->
+
+    <!-- replay reasons (content.replayReasons) -->
+    <string name="why_l">Big triangles first. They\'re half the picture.</string>
+    <string name="why_m">The middle triangle goes where a right angle fits snugly.</string>
+    <string name="why_sq">The square sits in a square spot, or turns 45° to make a point.</string>
+    <string name="why_p">The parallelogram leans. If it won\'t fit, flip it.</string>
+    <string name="why_s">The two little triangles fill the last corners.</string>
+
+    <!-- the volume closed with the system x (window model) -->
+    <string name="volume_closed">The tangram is closed</string> <!-- added -->
+    <string name="volume_closed_line">The panel still works. Bring the tangram back below.</string> <!-- added -->
+    <string name="btn_bring_volume">Bring the tangram back</string> <!-- added -->
+    <string name="confirm_progress">Placed %1$d/7 · %2$s · %3$d moves</string> <!-- added -->
+    <string name="confirm_exit_line">Your progress is saved for next time.</string> <!-- added -->
+    <string name="confirm_clear_line">Ticks and best times will be cleared.</string> <!-- added -->
+</resources>

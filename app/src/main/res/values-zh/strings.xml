@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 文案照搬设计包 content.*（D28）；标 added 的是设计包里没有、ui-audit.md 里列出的。 -->
+<resources>
+    <string name="app_name">七巧板</string>
+    <string name="lang_code">zh</string>
+
+    <string name="tab_play">拼</string>
+    <string name="tab_library">题库</string>
+    <string name="tab_rules">规矩</string>
+    <string name="tab_settings">设置</string>
+
+    <string name="s00">把木片摆出来…</string>
+    <string name="s02">点一块木片，再点影子里的位置。</string>
+    <string name="s02_empty">先点一块木片。</string>
+    <string name="s03">点影子里的位置放下去。转方向点旁边的木签。</string>
+    <string name="s06">这儿有木片了，挨着放下了。</string>
+    <string name="s07">进去了！</string>
+    <string name="t6">位置对了，转一下就进去。</string>
+    <string name="locked">这块放好了。要拿出来就点悔一步。</string>
+    <string name="help_line">帮你放了一块%1$s：%2$s</string>
+    <string name="s13">想拼啥拼啥，拼完看看像什么。</string>
+    <string name="s17">点一下木片，面板就回来。</string>
+    <string name="disabled">拼好了，悔一步、提示、帮忙先歇着。</string>
+    <string name="s01_coach">先点这块大三角。</string>
+    <string name="s01_start">开始拼</string>
+    <string name="s10_line">拼好了！%1$s，%2$d 步。下一道是%3$s。</string>
+    <string name="s10_hint">用了提示，这次不记最好成绩。</string>
+    <string name="s10_helped">帮了 %1$d 次，这次不记最好成绩。</string>
+    <string name="s10_best">新的最好成绩。</string>
+    <string name="s13_no_hint">随便拼没有提示。</string>
+    <string name="s16_reset">木片都回托盘？</string>
+    <string name="s16_exit">不玩了？</string>
+    <string name="s16_clear">拼过的记录都清掉？</string>
+    <string name="s16_switch">换成「%1$s」？这道拼的会清掉。</string>
+    <string name="s18">接着拼？上次「%2$s」放了 %1$d 块，用了 %3$s。</string>
+    <string name="undid">撤回了一步。</string>
+    <string name="replay_title">慢放一遍 · %1$d / 7</string>
+    <string name="plate">%1$s · %2$d / 7 · %3$s</string>
+    <string name="plate_solved">%1$s · 拼好了</string>
+    <string name="plate_free">随便拼 · %1$d 步</string>
+    <string name="readout">已放 %1$d / 7 · %2$s · %3$d 步 · 最好 %4$s</string>
+    <string name="readout_free">%1$d 步</string>
+    <string name="best_none">—</string>
+    <string name="reopen_note">窗口会在七巧板旁边重新打开，要挪就用窗口下的系统把手拖。</string>
+
+    <string name="btn_undo">悔一步</string>
+    <string name="btn_hint_on">提示 开</string>
+    <string name="btn_hint_off">提示 关</string>
+    <string name="btn_help">帮我放一块</string>
+    <string name="btn_mute">静音</string>
+    <string name="btn_sound">声音</string>
+    <string name="btn_reset">重摆</string>
+    <string name="btn_next">下一题</string>
+    <string name="btn_replay">慢放一遍</string>
+    <string name="btn_again">再拼一次</string>
+    <string name="btn_skip">跳过</string>
+    <string name="btn_resume">接着拼</string>
+    <string name="btn_pick_other">换一道</string>
+    <string name="btn_free">随便拼</string>
+    <string name="btn_reopen">重开控制窗</string>
+    <string name="btn_clear">清除记录</string>
+    <string name="btn_quit">退出应用</string>
+    <string name="btn_cancel">算了</string>
+    <string name="btn_confirm_reset">重摆</string>
+    <string name="btn_confirm_quit">退出</string>
+    <string name="btn_confirm_clear">清掉</string>
+    <string name="btn_confirm_switch">换</string>
+    <string name="tab_left">左转</string>
+    <string name="tab_right">右转</string>
+    <string name="tab_flip">翻面</string>
+
+    <string name="settings_language">语言</string>
+    <string name="lang_system">跟随系统</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_en">English</string>
+    <string name="settings_sound">音效</string>
+    <string name="settings_volume">音量</string>
+    <string name="vol_low">低</string>
+    <string name="vol_mid">中</string>
+    <string name="vol_high">高</string>
+    <string name="settings_reduced">减少动态</string>
+    <string name="opt_on">开</string>
+    <string name="opt_off">关</string>
+    <string name="settings_about">关于</string>
+    <string name="about_text">版本 %1$s · 图标 Material Symbols（Apache-2.0）· 字体 Noto Sans（OFL）</string>
+
+    <string name="name_l">大三角</string>
+    <string name="name_m">中三角</string>
+    <string name="name_s">小三角</string>
+    <string name="name_sq">正方形</string>
+    <string name="name_p">平行四边形</string>
+    <string name="names_line">大三角 ×2 · 中三角 · 小三角 ×2 · 正方形 · 平行四边形</string>
+    <string name="rules_1">七块木片都要用上，一块也不能叠。</string>
+    <string name="rules_2">放进影子里，方向对了它会「咔嗒」沉下去。</string>
+    <string name="rules_3">平行四边形是唯一要翻面的，对不上就翻过来。</string>
+    <string name="mistake_1">两块大三角一样大，放哪块都行。</string>
+    <string name="mistake_2">三角和正方形翻面没用，转一转就够了。</string>
+    <string name="mistake_3">卡住了就开提示，影子里会画出拼缝。</string>
+    <string name="rules_source">七巧板是清代中国传出来的，19 世纪在欧美火过一阵，出版过的图样有 6500 多个。</string>
+    <string name="rules_mistakes">常错</string>
+
+    <string name="why_l">先放两块大三角，它们占了整整一半。</string>
+    <string name="why_m">中三角找一个直角正好卡住的角。</string>
+    <string name="why_sq">正方形放在方方正正的地方，或者转 45° 当个尖。</string>
+    <string name="why_p">平行四边形是歪的，对不上就翻个面试试。</string>
+    <string name="why_s">两块小三角补最后的小角。</string>
+
+    <string name="volume_closed">七巧板收起来了</string>
+    <string name="volume_closed_line">面板还能用。点下面把七巧板放回来。</string>
+    <string name="btn_bring_volume">把七巧板放回来</string>
+    <string name="confirm_progress">已放 %1$d / 7 · 用了 %2$s · %3$d 步</string>
+    <string name="confirm_exit_line">进度会存好，下次接着拼。</string>
+    <string name="confirm_clear_line">拼过的勾和最好成绩都会清掉。</string>
+</resources>
