@@ -1,6 +1,6 @@
 # 七巧板 Tangram: project guidance
 
-A wooden tangram on the desk for PICO OS 6 Shared Space (Spatial SDK BOM 6.1.9), package `io.embodit.tangramwood`, v0.1.1.
+A wooden tangram on the desk for PICO OS 6 Shared Space (Spatial SDK BOM 6.1.9), package `com.kejing.tangramwood`, v0.1.2.
 Design contract: spatial-app-factory `apps/tangram-wood/design-package.json` (v1.2, gate B passed), PRD and sample beside it.
 Skeleton from the factory's KlotskiBox v0.1.1 (two containers, theme, sound pool, level gate, board-input template); the
 tangram domain, scene and pages are new. 2026-11-10 user: 「七巧板也可以做，就是要给格子本身和间距大一点，不然空间交互容易点错」
@@ -51,7 +51,7 @@ python tools/build_icon.py --icon512 <factory>/apps/tangram-wood/icon.png
 Emulators are shared: borrow with `python -I bin/emu_borrow.py borrow tangram-wood` in the factory, return after.
 
 ## Debug broadcast (QA screenshots)
-`adb shell am broadcast -a io.embodit.tangramwood.DEBUG -p io.embodit.tangramwood --es cmd <cmd> --es a "<arg>"`. Log tag `Tangram`.
+`adb shell am broadcast -a com.kejing.tangramwood.DEBUG -p com.kejing.tangramwood --es cmd <cmd> --es a "<arg>"`. Log tag `Tangram`.
 Every command goes through the same taps the volume sends (`routeTap` with a holder name).
 
 | State | Command | Notes |

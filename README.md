@@ -6,7 +6,7 @@
 
 **A thick wooden tangram on your desk: tap a piece, tap the shadow, and it flies over; turn it, flip it, and fit all seven pieces into the shadow on the board.**
 
-PICO OS 6 · PICO Spatial SDK 6.1.9 · Kotlin / SpatialUI · Shared Space · package `io.embodit.tangramwood` · v0.1.1 (pre-release / 预发布)
+PICO OS 6 · PICO Spatial SDK 6.1.9 · Kotlin / SpatialUI · Shared Space · package `com.kejing.tangramwood` · v0.1.1 (pre-release / 预发布)
 
 > **模拟器 QA 通过，真机未验证（Simulator QA passed; not yet verified on a real headset）。**
 
@@ -20,11 +20,11 @@ adb install -r Tangram-v0.1.1.apk
 ```
 
 ```bash
-pico-cli app launch io.embodit.tangramwood
+pico-cli app launch com.kejing.tangramwood
 ```
 
-没有 pico-cli 时也可以：`adb shell monkey -p io.embodit.tangramwood -c android.intent.category.LAUNCHER 1`，或在头显的应用库里点「七巧板 / Tangram」。
-Without pico-cli: `adb shell monkey -p io.embodit.tangramwood -c android.intent.category.LAUNCHER 1`, or open "Tangram" from the headset's app library.
+没有 pico-cli 时也可以：`adb shell monkey -p com.kejing.tangramwood -c android.intent.category.LAUNCHER 1`，或在头显的应用库里点「七巧板 / Tangram」。
+Without pico-cli: `adb shell monkey -p com.kejing.tangramwood -c android.intent.category.LAUNCHER 1`, or open "Tangram" from the headset's app library.
 
 需要 PICO OS 6 头显或 PICO Emulator 6.1。APK 是 debug 包，可以直接 `adb install`。
 Needs a PICO OS 6 headset or PICO Emulator 6.1. The APK is a debug build and installs directly with `adb install`.
