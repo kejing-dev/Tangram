@@ -6,17 +6,17 @@
 
 **A thick wooden tangram on your desk: tap a piece, tap the shadow, and it flies over; turn it, flip it, and fit all seven pieces into the shadow on the board.**
 
-PICO OS 6 · PICO Spatial SDK 6.1.9 · Kotlin / SpatialUI · Shared Space · package `io.embodit.tangramwood` · v0.1.1 (pre-release / 预发布)
+PICO OS 6 · PICO Spatial SDK 6.1.9 · Kotlin / SpatialUI · Shared Space · package `io.embodit.tangramwood` · v0.1.2
 
-> **模拟器 QA 通过，真机未验证（Simulator QA passed; not yet verified on a real headset）。**
+> **模拟器 QA 两轮通过，已在 PICO 头显上试过（Simulator QA passed in two rounds; tried on a PICO headset）。**
 
 ## 安装 / Install
 
-从 [Releases](https://github.com/kejing-dev/Tangram/releases) 下载 `Tangram-v0.1.1.apk`，头显用 USB 连电脑后：
-Download `Tangram-v0.1.1.apk` from [Releases](https://github.com/kejing-dev/Tangram/releases), connect the headset over USB, then:
+从 [Releases](https://github.com/kejing-dev/Tangram/releases) 下载 `Tangram-v0.1.2-debug.apk`，头显用 USB 连电脑后：
+Download `Tangram-v0.1.2-debug.apk` from [Releases](https://github.com/kejing-dev/Tangram/releases), connect the headset over USB, then:
 
 ```bash
-adb install -r Tangram-v0.1.1.apk
+adb install -r Tangram-v0.1.2-debug.apk
 ```
 
 ```bash
@@ -26,8 +26,8 @@ pico-cli app launch io.embodit.tangramwood
 没有 pico-cli 时也可以：`adb shell monkey -p io.embodit.tangramwood -c android.intent.category.LAUNCHER 1`，或在头显的应用库里点「七巧板 / Tangram」。
 Without pico-cli: `adb shell monkey -p io.embodit.tangramwood -c android.intent.category.LAUNCHER 1`, or open "Tangram" from the headset's app library.
 
-需要 PICO OS 6 头显或 PICO Emulator 6.1。APK 是 debug 包，可以直接 `adb install`。
-Needs a PICO OS 6 headset or PICO Emulator 6.1. The APK is a debug build and installs directly with `adb install`.
+需要 PICO OS 6 头显或 PICO Emulator 6.1。`-debug.apk` 是 debug 签名包，可以直接 `adb install`；`Tangram-v0.1.2.apk` 是未签名的 release 包（上架用），要先签名才能安装。
+Needs a PICO OS 6 headset or PICO Emulator 6.1. The `-debug.apk` is debug-signed and installs directly with `adb install`; `Tangram-v0.1.2.apk` is the unsigned release build (for store submission) and must be signed before it can be installed.
 
 ![封面：托盘和题板并排朝向用户，托盘里七块枫木木片，题板上是「房子」的影子，右边是控制窗](docs/cover-S02-puzzle.jpg)
 
@@ -61,7 +61,7 @@ Needs a PICO OS 6 headset or PICO Emulator 6.1. The APK is a debug build and ins
 
 <img src="docs/launcher.jpg" width="480" alt="系统应用库里的七巧板图标">
 
-### 已知问题（QA 第 2 轮，不影响使用）
+### 已知问题（QA 第 2 轮，不影响使用；v0.1.2 与 v0.1.1 功能相同）
 
 - 控制窗在模拟器默认视角下右边有一部分出了画面（体积变宽到 1.30 m 后更靠右），第一次打开时 [开始拼] 只露一半；真机视场更宽，待真机确认。
 - 冷启动在模拟器上波动大：点图标到看到七巧板 1.0–11.4 秒（设计要求 2 秒内，待真机复核）。
@@ -69,7 +69,7 @@ Needs a PICO OS 6 headset or PICO Emulator 6.1. The APK is a debug build and ins
 - 关掉控制窗后，题名牌第二行提示「点一下木片，面板就回来」字太小，1.75 米外看不清。
 - 转向只有 45° 一步，最坏要连点 3–4 下。
 
-还没在头显上验过：手柄射线 / 手势射线 / 眼手点木片、木签、落点格；冷启动 2 秒；捏住拖动题板上木片的手感；音效响度；控制窗在真机视场里是否完整。
+模拟器上没法验、留给真机的项：手柄射线 / 手势射线 / 眼手点木片、木签、落点格；冷启动 2 秒；捏住拖动题板上木片的手感；音效响度；控制窗在真机视场里是否完整。
 
 ### 结构与构建
 
@@ -94,7 +94,7 @@ Every tap target is sized to be easy to hit: the shortest piece edge is 8.5 cm, 
 
 See the table above: a selected piece, a flip, a piece snapping in, a solved puzzle, the library, and resuming a saved puzzle.
 
-### Known issues (QA round 2, none blocking)
+### Known issues (QA round 2, none blocking; v0.1.2 is functionally the same as v0.1.1)
 
 - On the emulator's default view the right part of the control window is out of frame (further right since the volume grew to 1.30 m), so the first-run Start button is half visible; a headset has a wider view, to be confirmed.
 - Cold start varies a lot on the emulator: 1.0–11.4 s from tapping the icon to seeing the tangram (the design asks for 2 s; to be checked on a headset).
@@ -102,7 +102,7 @@ See the table above: a selected piece, a flip, a piece snapping in, a solved puz
 - With the control window closed, the second line on the title plate ("Tap a piece to bring the panel back.") is too small to read from 1.75 m.
 - Turning is one 45° step at a time; the worst case needs 3–4 taps.
 
-Not yet verified on a headset: controller ray / hand ray / eye-hand taps on pieces, tabs and pads; the 2 s cold start; the feel of pinch-dragging a piece on the board; sound loudness; whether the control window fits a headset's view.
+Items the emulator cannot check, left to a headset: controller ray / hand ray / eye-hand taps on pieces, tabs and pads; the 2 s cold start; the feel of pinch-dragging a piece on the board; sound loudness; whether the control window fits a headset's view.
 
 ### Structure and build
 
